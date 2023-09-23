@@ -1,0 +1,85 @@
+/* Mobile-friendly CSS with content aligned at the top */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffcc00; /* Fun yellow background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 90%; /* Responsive max-width */
+    text-align: center;
+    margin: 20px auto; /* Center the container horizontally */
+}
+
+h1 {
+    font-size: 36px; /* Larger font size */
+    color: #ff3366; /* Fun pink color */
+    margin-bottom: 20px;
+    overflow-wrap: break-word; /* Prevent text overflow */
+}
+
+#color-box {
+    display: flex;
+    flex-wrap: wrap; /* Allow colors to wrap on small screens */
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin: 10px;
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.color:hover {
+    transform: scale(1.1); /* Zoom in a bit on hover */
+}
+
+.color-option {
+    font-size: 24px; /* Larger font size */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    background-color: #66ccff; /* Light blue background color */
+    overflow-wrap: break-word; /* Prevent text overflow */
+}
+
+.color-option:hover {
+    background-color: #ff9900; /* Bright orange background color on hover */
+}
+
+#message {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 24px; /* Slightly smaller font size */
+    color: #ff3366; /* Fun pink color */
+    overflow-wrap: break-word; /* Prevent text overflow */
+}
+
+#score {
+    font-size: 28px; /* Larger font size */
+    color: #000000; /* Fun yellow color */
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    overflow-wrap: break-word; /* Prevent text overflow */
+}
